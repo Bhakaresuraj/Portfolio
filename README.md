@@ -98,7 +98,7 @@ cp .env.example .env
 
 2. Edit `.env` and fill in your configuration:
 ```env
-PORT=3000
+PORT=5000
 MONGODB_URI=mongodb://localhost:27017/portfolio
 EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
@@ -134,7 +134,7 @@ npm run dev
 npm start
 ```
 
-The server will start on `http://localhost:3000`
+The server will start on `http://localhost:5000`
 
 ## 📝 Database Setup
 
@@ -273,7 +273,7 @@ server {
     server_name yourdomain.com;
 
     location / {
-        proxy_pass http://localhost:3000;
+        proxy_pass http://localhost:5000;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
@@ -319,7 +319,7 @@ server {
 
 ### Port Already in Use
 - Change `PORT` in `.env`
-- Or kill the process: `lsof -ti:3000 | xargs kill`
+- Or kill the process: `lsof -ti:5000 | xargs kill`
 
 ## 📄 License
 
