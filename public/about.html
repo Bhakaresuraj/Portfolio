@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Me - Portfolio">
+    <title>About - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>Get to know more about my journey and passion</p>
+        </div>
+    </section>
+
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 id="aboutName">Your Name</h2>
+                    <h3 id="aboutTitle">Full Stack Developer</h3>
+                    <div id="aboutBio">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>Profile Image</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-details">
+                <div class="detail-card">
+                    <h3>Education</h3>
+                    <p>Bachelor's in Computer Science</p>
+                    <p class="text-muted">University Name, Year</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Experience</h3>
+                    <p>5+ Years in Web Development</p>
+                    <p class="text-muted">Building scalable applications</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Location</h3>
+                    <p>Available for Remote Work</p>
+                    <p class="text-muted">Open to opportunities</p>
+                </div>
+            </div>
+
+            <div class="social-links-section">
+                <h3>Connect With Me</h3>
+                <div class="social-links" id="aboutSocial">
+                    <!-- Social links will be dynamically inserted -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html>
