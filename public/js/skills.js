@@ -51,9 +51,7 @@ function renderSkills(skills) {
             <div class="skill-progress">
                 <div class="skill-progress-bar" style="width: ${skill.proficiencyLevel}%"></div>
             </div>
-            <div style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--text-light);">
-                ${skill.proficiencyLevel}%
-            </div>
+            
         </div>
     `).join('');
 

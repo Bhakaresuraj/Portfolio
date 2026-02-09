@@ -12,13 +12,8 @@ const skillSchema = new mongoose.Schema({
     required: [true, 'Category is required'],
     enum: ['Frontend', 'Backend', 'Database', 'Tools', 'Other'],
     trim: true,
-  },
-  proficiencyLevel: {
-    type: Number,
-    required: [true, 'Proficiency level is required'],
-    min: 1,
-    max: 100,
-  },
+  }
+
 }, {
   timestamps: true,
 });

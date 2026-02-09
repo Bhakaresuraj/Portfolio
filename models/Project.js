@@ -28,11 +28,7 @@ const projectSchema = new mongoose.Schema({
   githubLink: {
     type: String,
     trim: true,
-  },
-  imageUrl: {
-    type: String,
-    trim: true,
-  },
+  }
 }, {
   timestamps: true,
 });
